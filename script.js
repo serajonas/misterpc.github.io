@@ -1,5 +1,5 @@
 // Troque pelo número real, com código do país e DDD, só dígitos (ex.: 5519999999999).
-var WHATSAPP = "5500000000000";
+var WHATSAPP = "5519987122278";
 // Troque pelo e-mail real.
 var EMAIL = "contato@exemplo.com";
 
