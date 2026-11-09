@@ -3,61 +3,212 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meu Site</title>
-  <meta name="description" content="Descrição curta do site.">
+  <title>Mister PC | Suporte de TI para empresas</title>
+  <meta name="description" content="Suporte de TI, redes, servidores e backup para empresas. Atendimento rápido, contrato mensal e montagem de estações de trabalho.">
+  <meta name="theme-color" content="#0a0e1a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+
   <header class="topo">
-    <a class="marca" href="#inicio">Meu Site</a>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
+    <a class="marca" href="#inicio" aria-label="Mister PC, início">
+      <span class="marca-icone" aria-hidden="true"></span>Mister PC
+    </a>
+    <nav aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#planos">Planos</a>
+      <a href="#montagens">Montagens</a>
+      <a href="#contato" class="nav-contato">Contato</a>
     </nav>
   </header>
 
-  <main>
+  <main id="conteudo">
     <section id="inicio" class="hero">
-      <h1>Título principal do site</h1>
-      <p>Uma frase curta explicando o que você faz ou o que este site oferece.</p>
-      <a class="botao" href="#projetos">Ver projetos</a>
+      <div class="hero-texto">
+        <h1>A TI da sua empresa funcionando sem você precisar pensar nela.</h1>
+        <p class="lead">Suporte técnico, rede, servidores e backup para pequenas e médias empresas. Você abre o chamado, a gente resolve e mostra o que foi feito.</p>
+        <div class="acoes">
+          <a class="botao" data-whatsapp href="#contato">Pedir orçamento no WhatsApp</a>
+          <a class="botao-sec" href="#servicos">Ver serviços</a>
+        </div>
+      </div>
+
+      <figure class="painel" aria-label="Exemplo de painel de monitoramento">
+        <div class="painel-topo">
+          <span class="ponto" aria-hidden="true"></span>
+          <span>Rede da empresa</span>
+          <span class="painel-estado">Tudo operando</span>
+        </div>
+        <ul class="painel-lista" id="painel">
+          <li><span class="item">Servidor de arquivos</span><span class="ok">online</span></li>
+          <li><span class="item">Firewall</span><span class="ok">ativo</span></li>
+          <li><span class="item">Backup noturno</span><span class="ok">concluído às 02:14</span></li>
+          <li><span class="item">Estações atualizadas</span><span class="ok">24 de 24</span></li>
+          <li><span class="item">Antivírus</span><span class="ok">sem ameaças</span></li>
+          <li><span class="item">Último chamado</span><span class="ok">resolvido em 18 min</span></li>
+        </ul>
+        <figcaption>Exemplo ilustrativo do tipo de acompanhamento que você recebe.</figcaption>
+      </figure>
     </section>
 
-    <section id="sobre">
-      <h2>Sobre</h2>
-      <p>Escreva aqui um parágrafo de apresentação. Troque este texto pelo seu conteúdo.</p>
+    <section id="servicos" class="secao">
+      <h2>O que a Mister PC cuida</h2>
+      <p class="intro">Do computador de cada funcionário ao servidor da sala dos fundos.</p>
+      <dl class="ficha">
+        <div class="linha">
+          <dt>Suporte técnico</dt>
+          <dd>Atendimento remoto e presencial para estações, impressoras e sistemas. Chamado aberto, chamado acompanhado até o fim.</dd>
+        </div>
+        <div class="linha">
+          <dt>Redes e Wi-Fi</dt>
+          <dd>Projeto, cabeamento, roteadores e VLANs. Wi-Fi que cobre o escritório inteiro e separa a rede dos visitantes.</dd>
+        </div>
+        <div class="linha">
+          <dt>Servidores</dt>
+          <dd>Instalação, manutenção e atualização de servidores Windows e Linux, locais ou em nuvem.</dd>
+        </div>
+        <div class="linha">
+          <dt>Backup e recuperação</dt>
+          <dd>Cópias automáticas com teste de restauração. Se algo falhar, você recupera os arquivos no mesmo dia.</dd>
+        </div>
+        <div class="linha">
+          <dt>Segurança</dt>
+          <dd>Firewall, antivírus, controle de acessos e VPN para quem trabalha de casa ou de filiais.</dd>
+        </div>
+        <div class="linha">
+          <dt>Montagem de estações</dt>
+          <dd>Computadores de trabalho montados sob medida, instalados e configurados no seu escritório.</dd>
+        </div>
+      </dl>
     </section>
 
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Projeto 1</h3>
-          <p>Descrição breve do projeto.</p>
-          <a href="#">Saiba mais</a>
+    <section id="planos" class="secao">
+      <h2>Como contratar</h2>
+      <p class="intro">Três formas de trabalhar. Os valores saem depois de uma conversa rápida sobre o tamanho da sua empresa.</p>
+      <div class="planos">
+        <article class="plano">
+          <h3>Atendimento avulso</h3>
+          <p class="plano-valor">Sob consulta</p>
+          <ul>
+            <li>Chamado pontual, remoto ou presencial</li>
+            <li>Pagamento por atendimento</li>
+            <li>Ideal para resolver um problema específico</li>
+          </ul>
         </article>
-        <article class="card">
-          <h3>Projeto 2</h3>
-          <p>Descrição breve do projeto.</p>
-          <a href="#">Saiba mais</a>
+        <article class="plano plano-destaque">
+          <h3>Suporte mensal</h3>
+          <p class="plano-valor">Sob consulta</p>
+          <ul>
+            <li>Chamados ilimitados por acesso remoto</li>
+            <li>Visitas programadas ao escritório</li>
+            <li>Monitoramento e backup incluídos</li>
+            <li>Relatório mensal do que foi feito</li>
+          </ul>
         </article>
-        <article class="card">
-          <h3>Projeto 3</h3>
-          <p>Descrição breve do projeto.</p>
-          <a href="#">Saiba mais</a>
+        <article class="plano">
+          <h3>Contrato com prazo de resposta</h3>
+          <p class="plano-valor">Sob consulta</p>
+          <ul>
+            <li>Tempo máximo de resposta por escrito</li>
+            <li>Atendimento prioritário</li>
+            <li>Para empresas que não podem parar</li>
+          </ul>
         </article>
       </div>
     </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>E-mail: <a href="mailto:voce@exemplo.com">voce@exemplo.com</a></p>
+    <section id="como" class="secao">
+      <h2>Como o atendimento funciona</h2>
+      <ol class="passos">
+        <li><strong>Você chama.</strong> Pelo WhatsApp ou e-mail, descrevendo o problema.</li>
+        <li><strong>Diagnóstico.</strong> A gente acessa a máquina ou vai até você e identifica a causa.</li>
+        <li><strong>Solução.</strong> O problema é resolvido e você recebe o registro do que foi feito.</li>
+        <li><strong>Acompanhamento.</strong> Depois do chamado, conferimos se tudo continua funcionando.</li>
+      </ol>
+    </section>
+
+    <section id="montagens" class="secao">
+      <h2>Configurações de exemplo</h2>
+      <p class="intro">Cada estação é montada para o trabalho de quem vai usar. Estas são três configurações-base; ajustamos ao seu orçamento.</p>
+      <!-- Troque estes exemplos pelas montagens reais do Mister PC (com fotos, se quiser). -->
+      <div class="fichas-pc">
+        <article class="pc">
+          <h3>Escritório</h3>
+          <p>Planilhas, sistema de gestão e e-mail, sem lentidão.</p>
+          <dl>
+            <dt>Processador</dt><dd>Intel Core i5 ou Ryzen 5</dd>
+            <dt>Memória</dt><dd>16 GB</dd>
+            <dt>Armazenamento</dt><dd>SSD de 512 GB</dd>
+            <dt>Vídeo</dt><dd>Integrado</dd>
+          </dl>
+        </article>
+        <article class="pc">
+          <h3>Projetos e design</h3>
+          <p>Edição de imagem, CAD e vários programas abertos ao mesmo tempo.</p>
+          <dl>
+            <dt>Processador</dt><dd>Intel Core i7 ou Ryzen 7</dd>
+            <dt>Memória</dt><dd>32 GB</dd>
+            <dt>Armazenamento</dt><dd>SSD de 1 TB</dd>
+            <dt>Vídeo</dt><dd>Placa dedicada</dd>
+          </dl>
+        </article>
+        <article class="pc">
+          <h3>Servidor pequeno</h3>
+          <p>Arquivos, banco de dados e sistema da empresa na rede local.</p>
+          <dl>
+            <dt>Processador</dt><dd>Xeon ou Ryzen com ECC</dd>
+            <dt>Memória</dt><dd>64 GB</dd>
+            <dt>Armazenamento</dt><dd>SSDs em RAID 1</dd>
+            <dt>Energia</dt><dd>Nobreak dimensionado</dd>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="secao contato">
+      <div>
+        <h2>Fale com o Mister PC</h2>
+        <p class="intro">Conte o que está acontecendo. A resposta vem pelo WhatsApp, em horário comercial.</p>
+        <p class="contato-dados">
+          <a data-whatsapp href="#contato">WhatsApp</a><br>
+          <a data-email href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+        </p>
+      </div>
+
+      <form id="form" class="form">
+        <label for="nome">Seu nome</label>
+        <input id="nome" name="nome" autocomplete="name" required>
+
+        <label for="empresa">Empresa</label>
+        <input id="empresa" name="empresa" autocomplete="organization">
+
+        <label for="assunto">O que você precisa?</label>
+        <select id="assunto" name="assunto">
+          <option>Suporte técnico</option>
+          <option>Rede e Wi-Fi</option>
+          <option>Servidor</option>
+          <option>Backup</option>
+          <option>Segurança</option>
+          <option>Montagem de estações</option>
+          <option>Outro assunto</option>
+        </select>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+        <button class="botao" type="submit">Enviar pelo WhatsApp</button>
+      </form>
     </section>
   </main>
 
   <footer class="rodape">
-    <p>&copy; 2026 Meu Site. Publicado com GitHub Pages.</p>
+    <p>Mister PC. Suporte de TI para empresas.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
