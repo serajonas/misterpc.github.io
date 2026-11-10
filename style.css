@@ -42,7 +42,7 @@ p { margin: 0; }
   background: var(--navy); border-bottom: 1px solid var(--navy-line);
 }
 .marca { display: inline-flex; align-items: center; gap: .65rem; color: #fff; text-decoration: none; font-family: var(--titulo); font-weight: 700; font-size: 1.25rem; }
-.marca-logo { height: 3.2rem; width: auto; display: block; border-radius: 6px; }
+.marca-logo { width: 3.1rem; height: 3.1rem; border-radius: 50%; display: block; }
 .marca small { font-weight: 500; font-size: .85rem; color: #9fb2d3; margin-left: .15rem; }
 .topo nav { display: flex; align-items: center; gap: 1.5rem; }
 .topo nav a { color: #c5d2ea; text-decoration: none; font-weight: 500; font-size: 1rem; }
