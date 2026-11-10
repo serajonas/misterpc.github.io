@@ -42,7 +42,7 @@ p { margin: 0; }
   background: var(--navy); border-bottom: 1px solid var(--navy-line);
 }
 .marca { display: inline-flex; align-items: center; gap: .65rem; color: #fff; text-decoration: none; font-family: var(--titulo); font-weight: 700; font-size: 1.25rem; }
-.marca-logo { width: 3.1rem; height: 3.1rem; border-radius: 50%; display: block; }
+.marca-logo { height: 3.2rem; width: auto; display: block; border-radius: 6px; }
 .marca small { font-weight: 500; font-size: .85rem; color: #9fb2d3; margin-left: .15rem; }
 .topo nav { display: flex; align-items: center; gap: 1.5rem; }
 .topo nav a { color: #c5d2ea; text-decoration: none; font-weight: 500; font-size: 1rem; }
@@ -168,3 +168,21 @@ p { margin: 0; }
   html { scroll-behavior: auto; }
   .painel-lista li, .painel-lista li.oculto { transition: none; opacity: 1; transform: none; }
 }
+
+/* serviços em grade */
+.grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2.2rem; }
+.servico-card { padding: 1.7rem; background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--blue); border-radius: 8px; }
+.servico-card p { margin: .6rem 0 1rem; color: var(--muted); }
+.servico-card ul { margin: 0; padding-left: 1.1rem; font-size: 1rem; }
+.servico-card li { margin-bottom: .3rem; }
+.chamada { margin-top: 2rem; }
+.chamada a { font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--blue); padding-bottom: 2px; }
+@media (max-width: 960px) { .grade { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .grade { grid-template-columns: 1fr; } }
+
+/* diferenciais */
+.difs { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.difs li { padding-left: 1rem; border-left: 3px solid var(--red); color: var(--muted); }
+.difs strong { display: block; color: var(--ink); font-family: var(--titulo); font-size: 1.15rem; margin-bottom: .2rem; }
+@media (max-width: 960px) { .difs { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .difs { grid-template-columns: 1fr; } }
